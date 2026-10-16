@@ -134,6 +134,9 @@ node demo/form-autofill/scripts/generate-xlsx.mjs
 
 页面行为由 Playwright 覆盖（`test/e2e/demo-product-form.e2e.spec.js`）：完整提交链路、必填校验、双语切换保持选中值、清空列表。
 
+用例直接打开本目录下的 `product-form.html`（`.resources/` 不进仓库）。素材缺失时整组自动跳过，
+所以克隆仓库或清理本地素材后跑全量 e2e 不会因此报错。
+
 ```bash
 npx playwright test test/e2e/demo-product-form.e2e.spec.js
 ```
